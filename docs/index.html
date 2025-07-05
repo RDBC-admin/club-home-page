@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RDBC Badminton Romsey</title>
   <style>
+    :root {
+      --primary-color: steelblue;
+      --primary-color-dark: #3d6a8f;
+      --heading-color-h2: rgb(177, 60, 158);
+      --heading-color-h3: rgb(54, 188, 181);
+    }
+
     body {
       font-family: Arial, sans-serif;
       max-width: 800px;
@@ -14,9 +21,70 @@
       text-align: center;
     }
 
+    h1 {
+      color: var(--primary-color);
+    }
+
+    h2 {
+      color: var(--heading-color-h2);
+    }
+
+    h3 {
+      color: var(--heading-color-h3);
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--primary-color-dark);
+      text-decoration: underline;
+    }
+
+    .info-table h4 {
+      color: inherit; /* Inherit color from the parent <a> tag */
+      margin: 0.5em 0;
+    }
+
     img {
       max-width: 100%;
       height: auto;
+    }
+
+    .info-table {
+      margin: 2em auto; /* This centers the table horizontally */
+      width: 700px;
+      max-width: 100%; /* Ensures table is responsive */
+      border: none;
+      border-collapse: collapse;
+    }
+
+    .info-table th,
+    .info-table td {
+      border: 0;
+      padding: 0.5em 1em;
+      vertical-align: middle;
+    }
+
+    .info-table th {
+      color: var(--heading-color-h3);
+      font-weight: normal;
+      width: 200px;
+      text-align: right;
+    }
+
+    .w3w-logo {
+      width: 20%;
+      min-width: 80px;
+    }
+
+    .charges-list {
+      list-style: none;
+      padding: 0;
     }
   </style>
 </head>
@@ -24,27 +92,54 @@
 <body>
   <h1>Welcome to RDBC Badminton Romsey</h1>
 
-  <!-- ✅ Add an image below -->
   <img src="./resources/images/Badminton image.jpg" alt="Dynamic Badminton Player Logo">
 
-  <p><b>The website of the Romsey District Badminton Club.</b><br></p>
+  <h2>The website of the Romsey District Badminton Club</h2>
 
-  <p>Good, intermediate standard, age over 18 - no beginners<br><br>
-    Friendly yet competitive games<br><br><br>
-  </p>
+  <p>Good, intermediate standard, age over 18, and no beginners as we don't have coaching.</p>
+  <p>Friendly, yet competitive, games.</p>
+
+  <hr>
+
+  <h2>Contact & Location</h2>
+
+  <table class="info-table">
+    <tr>
+      <th scope="row">Where we play</th>
+      <td>
+        <a href="https://what3words.com/ferrying.arrives.slice">
+          <h4>Romsey School Sports Hall, SO51 8ZB</h4>
+          <img class="w3w-logo" src="./resources/images/W3W.jpg" alt="What3words logo">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Social Media</th>
+      <td>
+        <a href="https://www.facebook.com/badmintoninromsey">
+          <h4>Facebook</h4>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td>
+        <a
+        href="mailto:membership-enquiry@rdbc-badminton-romsey.org">membership-enquiry@rdbc-badminton-romsey.org</a>
+      </td>
+    </tr>
+  </table>
+
 
   <hr>
 
-  <p>
-    <b>Interested?</b><br><br>
-    <i>
-      <b>Contact</b> us at <a href="mailto:membership-enquiry@rdbc-badminton-romsey.org">membership-enquiry@rdbc-badminton-romsey.org</a><br><br>
-      Visit our <a href="https://www.facebook.com/badmintoninromsey/">Facebook</a> page
-    </i>
-  </p>
+  <h3>Charges</h3>
+  <ul class="charges-list">
+    <li><strong>Annual membership:</strong> £120 a year</li>
+    <li><em>or...</em></li>
+    <li><strong>Visitors:</strong> £5 a night <sub><i>(first night free)</i></sub></li>
+  </ul>
 
-  <hr>
-  <p>Visitors £5 a night. Annual membership £120 a year.</p>
 </body>
 
 </html>
