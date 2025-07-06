@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RDBC Badminton Romsey</title>
+  <title>R&amp;DBC, Badminton, Romsey</title>
   <style>
     :root {
       --primary-color: steelblue;
@@ -45,20 +45,17 @@
       text-decoration: underline;
     }
 
-    .info-table h4 {
-      color: inherit; /* Inherit color from the parent <a> tag */
-      margin: 0.5em 0;
-    }
-
     img {
       max-width: 100%;
       height: auto;
     }
 
     .info-table {
-      margin: 2em auto; /* This centers the table horizontally */
-      width: 700px;
-      max-width: 100%; /* Ensures table is responsive */
+      margin: 2em auto;
+      /* This centers the table horizontally */
+      width: 600px;
+      max-width: 100%;
+      /* Ensures table is responsive */
       border: none;
       border-collapse: collapse;
     }
@@ -73,8 +70,12 @@
     .info-table th {
       color: var(--heading-color-h3);
       font-weight: normal;
-      width: 200px;
+      width: 150px;
       text-align: right;
+    }
+
+    .info-table td {
+      text-align: left;
     }
 
     .w3w-logo {
@@ -82,63 +83,88 @@
       min-width: 80px;
     }
 
-    .charges-list {
-      list-style: none;
+    .charges-list,
+    .intro-list {
+      list-style: circle;
       padding: 0;
+    }
+
+    .social-link {
+      display: inline-block;
+      /* Ensures proper spacing and hover area */
+      margin-right: 10px;
+      /* Adds space between icons */
+    }
+
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+      vertical-align: middle;
+    }
+
+    .social-link:hover .social-icon {
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
-  <h1>Welcome to RDBC Badminton Romsey</h1>
+  <h1>Welcome to R&amp;DBC</h1>
 
   <img src="./resources/images/Badminton image.jpg" alt="Dynamic Badminton Player Logo">
 
-  <h2>The website of the Romsey District Badminton Club</h2>
+  <h2>The website of the Romsey&nbsp;&amp;&nbsp;District Badminton Club</h2>
 
-  <p>Good, intermediate standard, age over 18, and no beginners as we don't have coaching.</p>
-  <p>Friendly, yet competitive, games.</p>
+  <p>Good, intermediate standard</p>
+  <p><i>Over 18, but no beginners<br>
+      <sup>as we don't have coaching</sup></i>
+  </p>
+  <p>Friendly, yet competitive, games</p>
 
   <hr>
-
-  <h2>Contact & Location</h2>
+  <h3>Contact & Location</h3>
 
   <table class="info-table">
     <tr>
       <th scope="row">Where we play</th>
       <td>
         <a href="https://what3words.com/ferrying.arrives.slice">
-          <h4>Romsey School Sports Hall, SO51 8ZB</h4>
-          <img class="w3w-logo" src="./resources/images/w3w.jpg" alt="What3words logo">
+          Romsey School Sports Hall, SO51 8ZB<br>
+          <img class="w3w-logo" src="./resources/images/w3w_HorizontalLogo_RGB_Fullcolour_ENG.svg" alt="What3words logo">
         </a>
       </td>
     </tr>
     <tr>
       <th scope="row">Social Media</th>
       <td>
-        <a href="https://www.facebook.com/badmintoninromsey">
-          <h4>Facebook</h4>
+        <a href="https://www.facebook.com/badmintoninromsey" class="social-link" target="_blank"
+          rel="noopener noreferrer" aria-label="Visit our Facebook page">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3 8h-1.5c-.828 0-1.5.672-1.5 1.5V12h3l-.5 3h-2.5v7h-3v-7h-2v-3h2V9.5c0-2.206 1.794-4 4-4H15V8z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/rdbc_badminton_romsey" class="social-link" target="_blank"
+          rel="noopener noreferrer" aria-label="Visit our Instagram page">
+          <img class="social-icon" src="./resources/images/Instagram_Glyph_Gradient.svg" alt="Instagram logo">
         </a>
       </td>
     </tr>
     <tr>
       <th scope="row">Email</th>
       <td>
-        <a
-        href="mailto:membership-enquiry@rdbc-badminton-romsey.org">membership-enquiry@rdbc-badminton-romsey.org</a>
+        <a href="mailto:membership-enquiry@rdbc-badminton-romsey.org">membership-enquiry@rdbc-badminton-romsey.org</a>
       </td>
     </tr>
   </table>
 
-
   <hr>
-
   <h3>Charges</h3>
-  <ul class="charges-list">
-    <li><strong>Annual membership:</strong> £120 a year</li>
-    <li><em>or...</em></li>
-    <li><strong>Visitors:</strong> £5 a night <sub><i>(first night free)</i></sub></li>
-  </ul>
+  <p><strong>Annual membership:</strong> £120 a year</p>
+  <p><em>or …</em></p>
+  <p><strong>Visitors:</strong> £5 a night <sub>(first night free)</sub></p>
 
 </body>
 
