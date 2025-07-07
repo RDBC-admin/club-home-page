@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>R&amp;DBC, Badminton, Romsey</title>
+  <title>R&amp;DBC Badminton Club, Romsey</title>
   <style>
     :root {
       --primary-color: steelblue;
@@ -85,8 +85,11 @@
 
     .charges-list,
     .intro-list {
+      display: inline-block;
+      /* Center the list block */
+      text-align: left;
+      /* Align list text to the left */
       list-style: circle;
-      padding: 0;
     }
 
     .social-link {
@@ -115,18 +118,22 @@
 
   <img src="./resources/images/Badminton image.jpg" alt="Dynamic Badminton Player Logo">
 
-  <h2>The website of the Romsey&nbsp;&amp;&nbsp;District Badminton Club</h2>
+  <h2>The Romsey&nbsp;&amp;&nbsp;District Badminton Club</h2>
 
-  <p>Good, intermediate standard</p>
-  <p>Over 18s and no beginners<br>
-      <i><sup>(as we don't have coaching)</sup></i>
-  </p>
-  <p>Friendly, yet competitive, games</p>
+  <ul class="intro-list">
+    <li>Good, intermediate standard</li>
+    <li>Friendly, yet competitive, games</li>
+    <li>Over 18s, no beginners<br>
+      <sup><em>(as we don't have coaching)</em></sup>
+    </li>
+  </ul>
 
   <hr>
-  <h3>Contact & Location</h3>
+  <h2>Tuesdays, 19:30 - 21:30</h2>
+  <p><sup><em>Playing throughout the year</em></sup></p>
 
-  <p>Tuesdays, 19:30 - 21:30 - we play throughout the year</p>
+  <hr>
+  <h3>Contact, Location &amp; Fees</h3>
 
   <table class="info-table">
     <tr>
@@ -134,7 +141,8 @@
       <td>
         <a href="https://what3words.com/ferrying.arrives.slice">
           Romsey School Sports Hall, SO51 8ZB<br>
-          <img class="w3w-logo" src="./resources/images/w3w_HorizontalLogo_RGB_Fullcolour_ENG.svg" alt="What3words logo">
+          <img class="w3w-logo" src="./resources/images/w3w_HorizontalLogo_RGB_Fullcolour_ENG.svg"
+            alt="What3words logo">
         </a>
       </td>
     </tr>
@@ -164,9 +172,15 @@
 
   <hr>
   <h3>Fees</h3>
-  <p><strong>Annual membership:</strong> £120 a year</p>
-  <p><em>or …</em></p>
-  <p><strong>Registered visitors:</strong> £5 a night <sub>(first night free)</sub></p>
+  <ul class="charges-list">
+    <li>
+      <strong>Annual membership:</strong> £120 a year<br>
+      <em>or …</em>
+    </li>
+    <li>
+      <strong>Registered visitors:</strong> £5 a night <sub>(first night free)</sub>
+    </li>
+  </ul>
 
 </body>
 
