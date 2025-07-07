@@ -2,6 +2,9 @@
 
 ## History
 
+- 07/07/2025
+  - improve readability
+
 - 06/07/2025 - First _proper_ release:
   - mobile ready
   - typos removed
