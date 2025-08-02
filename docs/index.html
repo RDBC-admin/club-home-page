@@ -11,6 +11,7 @@
       --primary-color-dark: #3d6a8f;
       --heading-color-h2: rgb(177, 60, 158);
       --heading-color-h3: rgb(54, 188, 181);
+      --heading-color-h4: rgb(177,60,158);
     }
 
     body {
@@ -30,6 +31,10 @@
     }
 
     h3 {
+      color: var(--heading-color-h3);
+    }
+
+    h4 {
       color: var(--heading-color-h3);
     }
 
@@ -57,6 +62,7 @@
       max-width: 100%;
       /* Ensures table is responsive */
       border: none;
+      /* No border for a cleaner look */
       border-collapse: collapse;
     }
 
@@ -76,6 +82,32 @@
 
     .info-table td {
       text-align: left;
+    }
+
+    .fees-table {
+      border: 1px dotted var(--primary-color);
+      border-collapse: collapse;
+      max-width: 100%;
+    }
+
+    .fees-table th,
+    .fees-table td {
+      border: 0;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    .fees-table th {
+      color: var(--heading-color-h4);
+      font-weight: normal;
+      width: 15px;
+      text-align: right;
+      padding: 10px;
+    }
+
+    .fees-table td {
+      text-align: left;
+      min-width: 125px;
     }
 
     .w3w-logo {
@@ -168,21 +200,31 @@
         <a href="mailto:membership-enquiry@rdbc-badminton-romsey.org">membership-enquiry@rdbc-badminton-romsey.org</a>
       </td>
     </tr>
+    <tr>
+      <th scope="row">Fees<br>
+        <strong><sup><em>&nbsp;2024-25</em></sup></strong>
+      </th>
+      <td>
+        <table class="fees-table">
+          <tr>
+            <th scope="row">Annually:</th>
+            <td>
+              <p><strong> £132 a year</strong><br>
+                <sup><em>Trial night free</em></sup>
+              </p>
+          </tr>
+          <tr>
+            <th scope="row">Visitors:</th>
+            <td>
+              <p><strong> £5 per night</strong></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
   </table>
 
   <hr>
-  <h3>Fees</h3>
-  <ul class="charges-list">
-    <li>
-      <strong>Annual membership:</strong> £120 a year<sup><em>&nbsp;2024-25</em></sup><br>
-      <br>
-      <em>or …</em>
-      <br>&nbsp;
-    </li>
-    <li>
-      <strong>Registered visitors:</strong> £5 a night<sup><em>&nbsp;(first night free)</em></sup>
-    </li>
-  </ul>
 
 </body>
 

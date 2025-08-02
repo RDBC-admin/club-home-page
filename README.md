@@ -2,10 +2,14 @@
 
 ## History
 
-- 07/07/2025
+- 2025/08/02
+  - Include 2025-26 rates
+  - Moves fees into the table
+
+- 2025/07/07
   - improve readability
 
-- 06/07/2025 - First _proper_ release:
+- 2025/07/06 - First _proper_ release:
   - mobile ready
   - typos removed
   - & characters inserted
