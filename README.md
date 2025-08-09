@@ -14,4 +14,4 @@
   - typos removed
   - & characters inserted
   - social media links created
-  - 1.0.1 fix ups 
+  - 1.0.1 fix ups
