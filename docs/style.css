@@ -1,0 +1,227 @@
+/* style.css with enhanced animations */
+:root {
+    --primary-color: steelblue;
+    --primary-color-dark: #3d6a8f;
+    --heading-color-h2: rgb(177, 60, 158);
+    --heading-color-h3: rgb(54, 188, 181);
+    --heading-color-h4: rgb(177, 60, 158);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #fefefe;
+    color: #222;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease-in-out;
+    animation: slideDown 0.6s ease-out;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    animation: slideDown 0.6s ease-out;
+}
+
+h2 {
+    color: var(--heading-color-h2);
+    font-size: 1.5rem;
+    animation: pulse 2s infinite ease-in-out alternate;
+}
+
+h3 {
+    color: var(--heading-color-h3);
+    font-size: 1.3rem;
+}
+
+h4 {
+    color: var(--heading-color-h4);
+    font-size: 1.1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, transform 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--primary-color-dark);
+    text-decoration: underline;
+    transform: scale(1.03);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+ul.intro-list {
+    list-style: circle;
+    padding-left: 1.5rem;
+    text-align: left;
+    margin: 0 auto 1rem;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out 0.3s backwards;
+}
+
+hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.info-table {
+    margin: 2em auto;
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeIn 1s ease-in-out 0.5s backwards;
+}
+
+.info-table th,
+.info-table td {
+    padding: 0.5em 1em;
+    vertical-align: middle;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.info-table tr:hover {
+    background-color: #f0f8ff;
+}
+
+.info-table th {
+    color: var(--heading-color-h3);
+    font-weight: normal;
+    width: 40%;
+    text-align: right;
+}
+
+.fees-table {
+    border: 1px dotted var(--primary-color);
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 0.25rem;
+    animation: pulse 3s infinite ease-in-out alternate;
+}
+
+.fees-table th {
+    padding: 0.25em;
+    text-align: right;
+}
+
+.fees-table td {
+    padding: 0.25em;
+    text-align: left;
+}
+
+.w3w-logo {
+    width: 80px;
+    height: auto;
+    margin-top: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.w3w-logo:hover {
+    transform: scale(1.05);
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+/* Mobile-first enhancements */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-table th,
+    .info-table td {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .info-table th {
+        margin-top: 1rem;
+    }
+
+    .social-link {
+        margin-bottom: 10px;
+    }
+}
