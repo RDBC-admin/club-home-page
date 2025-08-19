@@ -2,6 +2,11 @@
 
 ## History
 
+- 2025/08/19
+  - Tidy-ups
+  - Adjust order of text
+  - Include season details and note that we accept joiners anytime
+
 - 2025/08/02
   - Include 2025-26 rates
   - Moves fees into the table
